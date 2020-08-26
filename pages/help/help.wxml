@@ -1,0 +1,30 @@
+<view class="weui-cells weui-cells_after-title mt20 w100">
+  <view class="weui-cell">
+    1. 如何去水印？
+  </view>
+  <view class="weui-cell f16">
+    打开需要去水印的app，点击分享按钮选择”复制链接“。打开本程序会自动获取复制到的链接，点击粘贴，然后处理即可。
+  </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title mt20 w100">
+  <view class="weui-cell">
+    2. 为什么我解析了还有水印？
+  </view>
+  <view class="weui-cell f16">
+    请检查app中原作者上传的视频本身是否有水印，如果本身有水印暂时无法去除。
+  </view>
+  <view class="weui-cell">
+    <!-- <ad unit-id="adunit-d615151bbb8a7918" ad-type="video" ad-theme="white"></ad> -->
+    <ad unit-id="adunit-e742a0a3a6522700"></ad>
+  </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title mt20 w100">
+  <view class="weui-cell">
+    3. 为什么无法下载？
+  </view>
+  <view class="weui-cell f16">
+    如果文件大于10M，无法直接下载。可以复制链接通过其他方式下载。
+  </view>
+</view>

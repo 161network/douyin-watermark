@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarTitleText": "抖音一键去水印工具",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#17abe3",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_select.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "帮助中心",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my_select.png"
+      }
+    ]
+  }
+}

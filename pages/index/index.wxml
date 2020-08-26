@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper">
+    <swiper>
+      <swiper-item>
+        <view>
+          <image mode="aspectFill" src="https://img.lmengcity.com/others/dybanner.png"></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title mt20 w100">
+    <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <input class="weui-input" bindinput="setUrlInput" focus="{{false}}" placeholder="此处粘贴分享链接" value="{{url}}" />
+      <view class="weui-vcode-btn btn-rmwm" bindtap="rmwater">处理</view>
+      <view class="weui-vcode-btn btn-rmwm" bindtap="rmurl">清空</view>
+    </view>
+  </view>
+
+  <!-- <view class="weui-cells weui-cells_after-title mt20 w100">
+    <view class="weui-cell weui-cell_input ad">
+      <ad unit-id="adunit-e81382f0f386d9df"></ad>
+    </view>
+  </view> -->
+
+  <view class="weui-cells weui-cells_after-title mt20 w100">
+    <view class="weui-cell weui-cell_input weui-cell_vcode" wx:if="{{show_video}}">
+      <video id="myVideo" src="{{url_video}}" enable-danmu danmu-btn show-center-play-btn='{{true}}' show-play-btn="{{true}}" controls></video>
+    </view>
+
+    <view class="weui-cell" wx:if="{{show_video}}">
+      <button class="btn_download primary" bindtap="btnDownUrl">下载视频</button>
+      <button class="btn_copy" bindtap="btnCopyUrl">复制链接</button>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title mt20 w100">
+      <view class="weui-cell weui-cell_input ad">
+        <ad unit-id="adunit-8ab210e999f0ab05" ad-type="video" ad-theme="white"></ad>
+      </view>
+    </view>
+
+    <view class="weui-cell contact">
+      <view bindtap="copyWx" data-wx="Lemeng_city001">联系客服：zzz 点击微信号复制</view>
+    </view>
+
+    <view class="weui-cell">
+      <button type="primary"  open-type="share">
+      <image src="/images/share_white.png"></image>分享给好友/微信群</button>
+    </view>
+  </view>
+</view>
